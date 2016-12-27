@@ -1,4 +1,4 @@
-gender,NationalITy,PlaceofBirth,StageID,GradeID,SectionID,Topic,Semester,Relation,raisedhands,VisITedResources,AnnouncementsView,Discussion,ParentAnsweringSurvey,ParentschoolSatisfaction,StudentAbsenceDays,Class
+Gender,Nationality,PlaceofBirth,StageID,GradeID,SectionID,Topic,Semester,Relation,RaisedHands,VisitedResources,AnnouncementsView,Discussion,ParentAnsweringSurvey,ParentSchoolSatisfaction,StudentAbsenceDays,Class
 M,KW,KuwaIT,lowerlevel,G-04,A,IT,F,Father,15,16,2,20,Yes,Good,Under-7,M
 M,KW,KuwaIT,lowerlevel,G-04,A,IT,F,Father,20,20,3,25,Yes,Good,Under-7,M
 M,KW,KuwaIT,lowerlevel,G-04,A,IT,F,Father,10,7,0,30,No,Bad,Above-7,L
@@ -325,8 +325,6 @@ M,Jordan,Jordan,lowerlevel,G-02,A,French,F,Father,10,15,10,21,No,Bad,Above-7,L
 M,Jordan,Jordan,lowerlevel,G-02,A,French,S,Father,30,10,20,5,No,Bad,Above-7,L
 M,Syria,Syria,lowerlevel,G-02,A,French,F,Father,24,35,18,31,No,Bad,Under-7,M
 M,Syria,Syria,lowerlevel,G-02,A,French,S,Father,27,20,33,35,No,Bad,Under-7,M
-M,Jordan,Jordan,lowerlevel,G-02,A,French,F,Father,10,15,10,21,No,Bad,Above-7,L
-M,Jordan,Jordan,lowerlevel,G-02,A,French,S,Father,30,10,20,5,No,Bad,Above-7,L
 F,Jordan,Palestine,lowerlevel,G-02,A,French,F,Mum,80,77,63,83,Yes,Good,Under-7,M
 F,Jordan,Palestine,lowerlevel,G-02,A,French,S,Mum,75,85,73,80,Yes,Good,Under-7,M
 M,Jordan,Jordan,lowerlevel,G-02,A,French,F,Father,40,7,50,41,No,Good,Above-7,L
