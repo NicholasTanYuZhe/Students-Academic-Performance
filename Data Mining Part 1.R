@@ -1,7 +1,11 @@
+install.package("ggplot2")
+library(ggplot2)
+setwd("C:/Users/NicholasTan/Desktop/Studies/Gamma - Sem 2/TDS3301-Data Mining/Assignment/Part 1")
 data <- read.csv('xAPI-Edu-Data.csv')
 data
 dim(data)
 head(data)
+str(data)
 
 #check for na
 any(is.na(data))
@@ -30,12 +34,20 @@ names(data)[names(data) == 'Class'] <- 'student_performance_level'
 data
 
 #Check for outliers
-outliersRaisedHands <- boxplot(data$raised_hands, plot=FALSE)$out
-outliersVisitedResources <- boxplot(data$visited_resources, plot=FALSE)$out
-outliersViewedAnnouncement <- boxplot(data$viewed_announcement, plot=FALSE)$out
-outliersParticipateInDiscussionGroup <- boxplot(data$participate_in_discussion_group, plot=FALSE)$out
-outliersRaisedHands
-outliersVisitedResources
-outliersViewedAnnouncement
-outliersParticipateInDiscussionGroup
+boxplot(data$raised_hands)$out
+boxplot(data$visited_resources)$out
+boxplot(data$viewed_announcement)$out
+boxplot(data$participate_in_discussion_group)$out
 
+#To see how many students in each of the student performance level
+ggplot(data, aes(x = student_performance_level)) + geom_bar()
+#To see the relationship between semester and number of times student raised their hands with their performance level
+ggplot(data, aes(x= semester, y = raised_hands, fill = student_performance_level)) + geom_histogram(stat="identity", position=position_dodge())
+#To see the relationship between semester and number of times student visited resources with their performance level
+ggplot(data, aes(x= semester, y = visited_resources, fill = student_performance_level)) + geom_histogram(stat="identity", position=position_dodge())
+#To see the relationship between semester and number of times student viewed announcement with their performance level
+ggplot(data, aes(x= semester, y = viewed_announcement, fill = student_performance_level)) + geom_histogram(stat="identity", position=position_dodge())
+#To see the relationship between semester and number of times student participate in discussion group with their performance level
+ggplot(data, aes(x= semester, y = participate_in_discussion_group, fill = student_performance_level)) + geom_histogram(stat="identity", position=position_dodge())
+#To see the number of student in each performance level in each semester
+ggplot(data, aes(x= semester, fill = factor(student_performance_level))) + geom_bar(position=position_dodge())
